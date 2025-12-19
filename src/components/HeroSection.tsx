@@ -43,19 +43,13 @@ const HeroSection = ({ onTrackClick }: HeroSectionProps) => {
                 variant="hero" 
                 size="xl" 
                 onClick={onTrackClick}
-                className="group bg-primary-foreground text-primary hover:bg-primary-foreground/90 font-bold shadow-xl"
+                className="group bg-blue-600 text-white hover:bg-blue-700 font-bold shadow-xl"
+
               >
                 <Truck className="w-5 h-5 group-hover:animate-bounce-subtle" />
                 Track Your Parcel
               </Button>
-              <Button 
-                variant="outline" 
-                size="xl" 
-                className="border-2 border-primary-foreground/50 text-primary-foreground hover:bg-primary-foreground/10 font-semibold"
-              >
-                <Brain className="w-5 h-5" />
-                Learn About AI
-              </Button>
+              
             </div>
 
             {/* Stats */}
