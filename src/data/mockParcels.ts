@@ -21,8 +21,8 @@ export const mockParcels: Record<string, ParcelData> = {
   "PKG-2024-001": {
     trackingId: "PKG-2024-001",
     source: "Mumbai, Maharashtra",
-    destination: "Delhi, NCR",
-    currentLocation: "Jaipur Distribution Hub",
+    destination: "VIT-AP UNIVERSITY",
+    currentLocation: "HYDERABAD",
     originalDeliveryDate: "2024-12-20",
     aiPredictedDeliveryDate: "2024-12-21",
     delayRisk: 72,
@@ -33,14 +33,14 @@ export const mockParcels: Record<string, ParcelData> = {
       { date: "Dec 17", time: "09:00 AM", location: "Mumbai Sorting Facility", status: "Package picked up" },
       { date: "Dec 17", time: "11:30 PM", location: "Mumbai Airport Hub", status: "In transit to destination" },
       { date: "Dec 18", time: "06:00 AM", location: "Jaipur Distribution Hub", status: "Arrived at hub" },
-      { date: "Dec 18", time: "02:00 PM", location: "Jaipur Distribution Hub", status: "Processing for dispatch" },
+      { date: "Dec 18", time: "02:00 PM", location: "HYDERABAD POST HUB", status: "Processing for dispatch" },
     ]
   },
   "PKG-2024-002": {
     trackingId: "PKG-2024-002",
-    source: "Bangalore, Karnataka",
-    destination: "Chennai, Tamil Nadu",
-    currentLocation: "Vellore Transit Point",
+    source: "VIT-AP UNIVERSITY",
+    destination: "BANGALORE,KARNATAKA",
+    currentLocation: "TIRUPATHI",
     originalDeliveryDate: "2024-12-19",
     aiPredictedDeliveryDate: "2024-12-19",
     delayRisk: 15,
@@ -48,10 +48,10 @@ export const mockParcels: Record<string, ParcelData> = {
     delayExplanation: "Your package is progressing smoothly through our network. Weather conditions are favorable and all transit hubs are operating at optimal capacity. AI analysis indicates on-time delivery with high confidence.",
     status: 'out-for-delivery',
     timeline: [
-      { date: "Dec 18", time: "08:00 AM", location: "Bangalore Sorting Center", status: "Package picked up" },
+      { date: "Dec 18", time: "08:00 AM", location: "VIJAYAWADA", status: "Package picked up" },
       { date: "Dec 18", time: "02:00 PM", location: "Hosur Transit Hub", status: "In transit" },
       { date: "Dec 18", time: "06:00 PM", location: "Vellore Transit Point", status: "Package scanned" },
-      { date: "Dec 19", time: "07:00 AM", location: "Chennai Local Hub", status: "Out for delivery" },
+      { date: "Dec 19", time: "07:00 AM", location: "TIRUPATHI LOCAL HUB", status: "Out for delivery" },
     ]
   },
   "PKG-2024-003": {
