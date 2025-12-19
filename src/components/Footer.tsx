@@ -1,4 +1,5 @@
-import { Package, Brain, Mail, Phone } from "lucide-react";
+import { Brain, Mail, Phone } from "lucide-react";
+import indiaPostLogo from "@/assets/india-post-logo.png";
 
 const Footer = () => {
   return (
@@ -8,14 +9,19 @@ const Footer = () => {
           {/* Brand */}
           <div>
             <div className="flex items-center gap-3 mb-4">
-              <div className="w-10 h-10 rounded-xl gradient-hero flex items-center justify-center">
-                <Package className="w-5 h-5 text-primary-foreground" />
+              <img 
+                src={indiaPostLogo} 
+                alt="India Post Logo" 
+                className="w-12 h-12 object-contain bg-white rounded-lg p-1"
+              />
+              <div>
+                <span className="font-bold text-lg block">IPS</span>
+                <span className="text-xs text-background/70">Indian Postal Service</span>
               </div>
-              <span className="font-bold text-lg">SmartParcel</span>
             </div>
             <p className="text-background/70 text-sm">
               AI-powered parcel tracking with predictive delivery intelligence. 
-              Know before delays happen.
+              Serving India with smart logistics solutions.
             </p>
           </div>
 
@@ -39,18 +45,18 @@ const Footer = () => {
             <ul className="space-y-2 text-sm text-background/70">
               <li className="flex items-center gap-2">
                 <Mail className="w-4 h-4" />
-                support@smartparcel.ai
+                support@indiapost.gov.in
               </li>
               <li className="flex items-center gap-2">
                 <Phone className="w-4 h-4" />
-                1-800-PARCEL
+                1800-11-2011
               </li>
             </ul>
           </div>
         </div>
 
         <div className="mt-8 pt-8 border-t border-background/20 text-center text-sm text-background/50">
-          <p>© 2024 SmartParcel - AI Predictive Delivery System. Hackathon Demo.</p>
+          <p>© 2024 IPS - Indian Postal Service | AI Predictive Delivery System. Hackathon Demo.</p>
         </div>
       </div>
     </footer>
