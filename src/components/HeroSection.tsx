@@ -1,5 +1,6 @@
-import { Package, Brain, Bell, TrendingUp } from "lucide-react";
+import { Brain, Bell, TrendingUp } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import indiaPostLogo from "@/assets/india-post-logo.png";
 
 interface HeroSectionProps {
   onTrackClick: () => void;
@@ -17,17 +18,31 @@ const HeroSection = ({ onTrackClick }: HeroSectionProps) => {
       
       <div className="container relative z-10 px-4 md:px-6">
         <div className="flex flex-col items-center text-center max-w-4xl mx-auto">
+          {/* Logo */}
+          <div className="mb-6 animate-fade-in">
+            <img 
+              src={indiaPostLogo} 
+              alt="India Post Logo" 
+              className="w-24 h-24 md:w-32 md:h-32 object-contain"
+            />
+          </div>
+
           {/* Badge */}
-          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-accent border border-primary/20 mb-8 animate-fade-in">
+          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-accent border border-primary/20 mb-6 animate-fade-in">
             <Brain className="w-4 h-4 text-primary" />
             <span className="text-sm font-medium text-accent-foreground">AI-Powered Delivery Intelligence</span>
           </div>
 
           {/* Main heading */}
-          <h1 className="text-4xl md:text-6xl lg:text-7xl font-extrabold tracking-tight mb-6 animate-fade-in-up" style={{ animationDelay: "0.1s" }}>
-            Smart Parcel Tracking &{" "}
+          <h1 className="text-4xl md:text-6xl lg:text-7xl font-extrabold tracking-tight mb-4 animate-fade-in-up" style={{ animationDelay: "0.1s" }}>
+            <span className="text-primary">IPS</span> Smart Tracking &{" "}
             <span className="text-gradient">Predictive Delivery</span>
           </h1>
+
+          {/* Subheading */}
+          <p className="text-xl md:text-2xl font-semibold text-foreground/80 mb-4 animate-fade-in-up" style={{ animationDelay: "0.15s" }}>
+            Indian Postal Service
+          </p>
 
           {/* Subtitle */}
           <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mb-10 animate-fade-in-up" style={{ animationDelay: "0.2s" }}>
@@ -43,7 +58,7 @@ const HeroSection = ({ onTrackClick }: HeroSectionProps) => {
               onClick={onTrackClick}
               className="group"
             >
-              <Package className="w-5 h-5 group-hover:animate-bounce-subtle" />
+              <img src={indiaPostLogo} alt="" className="w-5 h-5 object-contain group-hover:animate-bounce-subtle" />
               Track Your Parcel
             </Button>
           </div>
